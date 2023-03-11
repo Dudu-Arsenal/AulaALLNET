@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* COR DO FUNDO */
+body{
+    background-color: rgb(183, 143, 203);
+}
+
+/* HEADER (CABEÇALHO) INICIO */
+
+.header-corpo{
+    min-height: 8vh;
+    height: 8vh;
+    background-color: rgb(169, 93, 207);
+    box-shadow: 1px 1px 3px #1f1f1f;
+}
+
+.header-conteudo{
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.header-conteudo a{
+    /* TAMANHO DA TAG */
+    width: 150px;
+    height: 100%;
+    /* POSICIONAMENTO */
+    margin: auto;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* FONTE ESTILO */
+    font-size: 150%;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header-conteudo a:hover{
+    background-color: rgb(216, 130, 238);
+    transition: all .3s ease-in-out;
+}
+
+/* HEADER (CABEÇALHO) FIM */
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* CORPO PRINCIPAL */
+
+.corpo-principal {
+    max-width: 1024px;
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.conteudo-principal {
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* TITULO E TEXTO NA ESQUERDA */
+.texto-corpo{
+    /* TAMANHO DA TAG QUE GUARDA O TITULO E O TEXTO */
+    width: 450px;
+    height: 250px;
+}
+
+.texto-conteudo{
+    /* CENTRALIZANDO O CONTEUDO */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ESTILO NO TITULO H1 */
+.texto-conteudo h1{
+    /* TAMANHO E BORDA DO H1 */
+    width: max-content;
+    margin: 20px 0px;
+    border-bottom: 3px solid whitesmoke;
+    /* ESTILO DO TEXTO DO H1 */
+    text-align: left;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:rgb(41, 5, 75);
+}
+
+/* EFEITO NA BORDA DO TITULO H1 */
+.texto-conteudo h1:hover{
+    border-color: #1f1f1f;
+    transition: all .5s ease-out;
+}
+
+/* ESTILO DO TEXTO */
+.texto-conteudo p{
+    color:rgb(41, 5, 75);
+    text-align: left;
+    font-size: 120%;
+}
+
+/* EFEITO DE SUBIR O TEXTO */
+.texto-conteudo p:hover{
+    margin-bottom: 90px;
+    color: #1f1f1f;
+    transition: all 1s ease-in-out;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* QUADRADO DO LOGIN */
+.login-corpo {
+    /* TAMANHO DA TAG */
+    width: 300px;
+    height: 300px;
+    /* POSICIONAMENTO */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* BORDA */
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+/* TITULO DO LOGIN */
+.login-title{
+    width: 100%;
+    font-weight: bolder;
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase; /* FONTE EM LETRA MAIUSCULA */
+}
+
+/* TAGS QUE GUARDAM OS LABELS E INPUTS */
+.login-entries{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* LABEL (NOMES) */
+.login-entries label{
+    /* TAMANHO DA TAG E DA FONTE DOS LABELS */
+    width: 220px; 
+    margin: auto;
+    font-size: 120%;
+}
+
+/* INPUT (ENTRADA) */
+.login-entries input{
+    /* TAMANHO DO INPUT */
+    min-width: 150px;
+    margin: auto;
+    /* BORDA */
+    border: 1.5px solid #1f1f1f;
+    border-radius: 5px;
+    /* TAMANHO DA FONTE DO TEXTO DIGITADO */
+    font-size: 110%;
+}
+
+.login-entries input:focus{
+    /* BORDA MUDA DE COR QUANDO CLICA 'FOCUS = FOCO' */
+    outline: none;
+    border-width: 2px;
+    border-color: rgb(213, 130, 238);
+}
+
+/* BOTÃO DO LOGIN */
+.login-btn{
+    /* CENTRALIZAR A TAG QUE GUARDA O BOTÃO */
+    margin: 10px auto 10px auto;
+}
+
+.login-btn button{
+    /* TAMANHO E COR */
+    width: 140px;
+    height: 34px;
+    background-color: rgb(169, 120, 215);
+    /* ESTILO DA FONTE */
+    font-weight: bolder;
+    font-size: 110%;
+    text-transform: uppercase;
+    /* BORDA E CURSOS */
+    border-radius: 3px;
+    border: 2px solid #1f1f1f;
+    cursor: pointer;
+}
+
+/* EFEITO DE COR DO BOTÃO */
+.login-btn button:hover{
+    background-color: violet;
+    transition: all .3s ease-in;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* CONTEUDO SECUNDARIO ABAIXO DO TEXTO E LOGIN */
+.conteudo-secundario{
+    /* TAMANHO */
+    width: 85%;
+    margin: auto;
+    /* CENTRALIZANDO */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* COR DO FUNDO E BORDA */
+    background-color: rgba(169, 93, 207, 0.575);
+    box-shadow: 1px 1px 5px #1f1f1f;
+    border-radius: 10px;
+    /* EFEITO */
+    transition: all .3s ease-in-out;
+}
+
+/* EFEITO */
+.conteudo-secundario:hover{
+    width: 87%;
+    box-shadow: 1px 1px 10px #1f1f1f;
+    transition: all .6s ease-in-out;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* TEXTO DENTRO DO CONTEUDO SECUNDARIO*/
+.texto{
+    /* CORAÇÃO */
+    background-image: url(./assets/purple-heart-emoji-mean-1.png);
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* CORAÇÃO */
+    height: 400px;
+    margin: 20px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* TEXTO */
+    text-align: center;
+    font-size: 170%;
+    font-weight: bolder;
+    color:rgb(28, 2, 53);
+    /* TEXTO */
+}
+
+/* EFEITO DO TEXTO */
+.texto p:hover{
+    color: whitesmoke;
+    transition: all .3s ease-in;
+}
+
+/* BOTÃO 'SAIBA MAIS' */
+.texto button{
+    /* TAMANHO E MARGEM */
+    width: 180px;
+    height: 50px;
+    margin: 20px 0;
+    /* BORDA E COR DO BOTÃO */
+    border-radius: 5px;
+    border: 2px solid #1f1f1f;
+    background-color: rgb(167, 89, 240);
+    /* ESTILO DA FONTE DO BOTÃO */
+    font-size: 100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* EFEITO MUDA DE COR O BOTÃO */
+.texto button:hover{
+    background-color: violet;
+    transition: all .3s ease-in;
+}
+
+/* IMAGEM DO CAFÉ, TAMANHO BORDA E MARGEM */
+.imagem img{
+    margin: 20px;
+    width: 400px;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* FOOTER (RODAPÉ) INICIO */
+
+/* FUNDO DO RODAPÉ */
+.footer-corpo{
+    min-height: 8vh;
+    height: 8vh;
+    background-color: rgb(28, 2, 53);
+}
+
+/* CENTRALIZANDO CONTEUDO DO RODAPÉ */
+.footer-conteudo{
+    /* TAMANHO E MARGEM */
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* CENTRLIZANDO E DANDO ESPAÇAMENTO */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ICONES DAS REDES SOCIAIS */
+.logos{
+    /* TAMANHO DA TAG QUE GUARDA OS ICONES */
+    width: max-content;
+    height: 100%;
+    /* CENTRALIZANDO E DANDO ESPAÇAMENTO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos img{
+    /* TAMANHO DOS ICONES */
+    margin: 15px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.logos img:hover{
+    /* EFEITO DE PREENCHER COR COM MOUSE EM CIMA */
+    background-color: violet;
+    border-radius: 5px;
+}
+
+/* TEXTO DO RODAPÉ */
+.footer-conteudo p{
+    font-size: 120%;
+    color: whitesmoke;
+}
+
+/* FOOTER (RODAPÉ) FIM */
