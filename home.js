@@ -27,11 +27,7 @@ function FuncaoJS(x, y){
     return (console.log(parseInt(x) + parseInt(y)));  */
 } 
 
-/* function setCor(){
-    let nome = document.getElementById('usuario');
-    let senha = document.getElementById('senha');
-    console.log(nome.value,"\n"+senha.value);
-
-    let mudaCor = document.querySelector('.nomeClasse');
-    mudaCor.setAttribute('style', 'background-color: greenyellow;')
-}  */
+function setCor(){
+let mudaCor = document.querySelector('.nomeClasse');
+mudaCor.setAttribute('style', 'background-color: greenyellow;')
+} 
