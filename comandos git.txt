@@ -1,0 +1,9 @@
+git add . (prepara todos os arquivos modificados)
+
+git status (verificar os arquivos)
+
+git commit -m "nome alterações" (cria o commit / pacote para o envio )
+
+git checkout -b nome-branch (cria nova branch com os arquivos modificados)
+
+git push origin nome-branch (envia os arquivos para o merge)

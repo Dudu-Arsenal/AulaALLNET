@@ -2,13 +2,15 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
     <title>Login</title> <!-- TITULO DA PAGINA NO NAVEGADOR -->
 </head>
 <body>
     <header class="header-corpo"> <!-- CABEÇALHO DA PAGINA, CONTEUDO QUE FICA NO TOPO -->
         <div class="header-conteudo"> 
             <a href="#">Home</a> <!-- TAG QUE FAZ UM LINK PARA UM SITE/PAGINA EXTERNO -->
-            <a href="#">Login</a>
+            <a href="#">Aviso</a>
             <a href="#">Contato</a>
         </div>
     </header>
@@ -25,23 +27,23 @@
             <div class="login-corpo"> <!-- CONTEUDO DA DIREITA, COM UMA AREA PARA LOGIN -->
                 <h1 class="login-title">Login</h1>
                 <div class="login-inputs">
-                    <div class="login-entries"> <!-- TAG PARA CENTRALIZAR O LABEL(NOME) E O INPUT(ENTRADA) -->
+                    <div class="login-entries" name="loginEntries"> <!-- TAG PARA CENTRALIZAR O LABEL(NOME) E O INPUT(ENTRADA) -->
                         <label>Usuario</label> <!-- TAG PARA NOMEAR O INPUT -->
-                        <input type="Text"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
+                        <input type="Text" id="usuario"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
                     </div>
                     <div class="login-entries">
                         <label>Senha</label>
-                        <input type="password">
+                        <input type="password" id="senha">
                     </div>
                 </div>
                 <div class="login-btn"> <!-- TAG PARA GUARDAR O BOTÃO -->
-                    <button type="submit">Entrar</button>
+                    <button type="submit" onclick="FuncaoJS()">Entrar</button>
                 </div>
             </div>
         </div>
         <div class="conteudo-secundario"> <!-- CONTEUDO SECUNDARIO DA PAGINA, QUE FICA ABAIXO DO CONTEUDO PRINCIPAL -->
             <div class="imagem"> <!-- TAG PARA GUARDAR A IMAGEM DO CAFÉ -->
-                <img src="coffee-purple-jeremy-moore.jpg" alt="Foto Exemplo"> <!-- TAG PARA INSERIR A IMAGEM -->
+                <img src="./assets/coffee-purple-jeremy-moore.jpg" alt="Foto Exemplo"> <!-- TAG PARA INSERIR A IMAGEM -->
             </div>
             <div class="texto"> <!-- TEXTO E BOTÃO NA DIREITA DO CAFÉ -->
                 <div>
@@ -54,9 +56,9 @@
     <footer class="footer-corpo"> <!-- RODAPÉ DA PAGINA, CONTEUDO QUE FICA NO FINAL DE TUDO -->
         <div class="footer-conteudo">
             <div class="logos">
-                <img src="facebook.png" class="logo"> <!-- TAG DE IMAGEM -->
-                <img src="instagram.png" class="logo">
-                <img src="twitter.png" class="logo">
+                <img src="./assets/facebook.png" class="logo"> <!-- TAG DE IMAGEM -->
+                <img src="./assets/instagram.png" class="logo">
+                <img src="./assets/twitter.png" class="logo">
             </div>
             <p>Todos os direitos reservados por DUDU.</p> <!-- TEXTO NO RODAPÉ -->
         </div>
