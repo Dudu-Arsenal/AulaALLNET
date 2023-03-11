@@ -1,0 +1,21 @@
+p{
+    font-size: 300%;
+    height: 20vh;
+    background-color: rebeccapurple;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 120%;
+}
+
+label{
+    font-size: 140%;
+}
+
+input{
+    font-size: 120%;
+    width: 180px;
+    height: 30px;
+}

@@ -10,7 +10,7 @@
     <header class="header-corpo"> <!-- CABEÇALHO DA PAGINA, CONTEUDO QUE FICA NO TOPO -->
         <div class="header-conteudo"> 
             <a href="#">Home</a> <!-- TAG QUE FAZ UM LINK PARA UM SITE/PAGINA EXTERNO -->
-            <a href="#">Aviso</a>
+            <a href="#" onclick="avisoTeste()">Aviso</a>
             <a href="#">Contato</a>
         </div>
     </header>
@@ -29,15 +29,15 @@
                 <div class="login-inputs">
                     <div class="login-entries" name="loginEntries"> <!-- TAG PARA CENTRALIZAR O LABEL(NOME) E O INPUT(ENTRADA) -->
                         <label>Usuario</label> <!-- TAG PARA NOMEAR O INPUT -->
-                        <input type="Text" id="usuario"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
+                        <input type="text" id="usuario" name="usuario"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
                     </div>
                     <div class="login-entries">
                         <label>Senha</label>
-                        <input type="password" id="senha">
+                        <input type="password" id="senha" name="senha">
                     </div>
                 </div>
                 <div class="login-btn"> <!-- TAG PARA GUARDAR O BOTÃO -->
-                    <button type="submit" onclick="FuncaoJS()">Entrar</button>
+                    <button type="submit" onclick="FuncaoJS(usuario.value, senha.value)">Entrar</button>
                 </div>
             </div>
         </div>
