@@ -155,7 +155,7 @@ body{
 /* TEXTO DENTRO DO CONTEUDO SECUNDARIO*/
 .texto{
     /* CORAÇÃO */
-    background-image: url(./assets/fire-png.webp);
+    background-image: url(../../assets/fire-png.webp);
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
