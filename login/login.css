@@ -1,0 +1,96 @@
+*{
+    --main-dark: rgb(197, 51, 51);
+    --main-light: rgb(255, 142, 142);
+    --hover-dark: rgb(161, 32, 32);
+    --hover-light: rgb(226, 96, 96);
+    --text-color: rgb(43, 10, 10);
+}
+
+.corpo-principal{
+    display: flex;
+}
+
+/* QUADRADO DO LOGIN */
+.login-corpo {
+    /* TAMANHO DA TAG */
+    width: 300px;
+    height: 300px;
+    /* POSICIONAMENTO */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* BORDA */
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+/* TITULO DO LOGIN */
+.login-title{
+    width: 100%;
+    font-weight: bolder;
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase; /* FONTE EM LETRA MAIUSCULA */
+}
+
+/* TAGS QUE GUARDAM OS LABELS E INPUTS */
+.login-entries{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* LABEL (NOMES) */
+.login-entries label{
+    /* TAMANHO DA TAG E DA FONTE DOS LABELS */
+    width: 220px; 
+    margin: auto;
+    font-size: 120%;
+}
+
+/* INPUT (ENTRADA) */
+.login-entries input{
+    /* TAMANHO DO INPUT */
+    min-width: 150px;
+    margin: auto;
+    /* BORDA */
+    border: 1.5px solid #1f1f1f;
+    border-radius: 5px;
+    /* TAMANHO DA FONTE DO TEXTO DIGITADO */
+    font-size: 110%;
+}
+
+.login-entries input:focus{
+    /* BORDA MUDA DE COR QUANDO CLICA 'FOCUS = FOCO' */
+    outline: none;
+    border-width: 2px;
+    border-color: var(--main-dark);
+}
+
+/* BOTÃO DO LOGIN */
+.login-btn{
+    /* CENTRALIZAR A TAG QUE GUARDA O BOTÃO */
+    margin: 10px auto 10px auto;
+}
+
+.login-btn button{
+    /* TAMANHO E COR */
+    width: 140px;
+    height: 34px;
+    background-color: var(--main-light);
+    /* ESTILO DA FONTE */
+    font-weight: bolder;
+    font-size: 110%;
+    text-transform: uppercase;
+    /* BORDA E CURSOS */
+    border-radius: 3px;
+    border: 2px solid #1f1f1f;
+    cursor: pointer;
+}
+
+/* EFEITO DE COR DO BOTÃO */
+.login-btn button:hover{
+    background-color: var(--main-dark);
+    transition: all .3s ease-in;
+}

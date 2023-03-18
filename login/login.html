@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="../home.css" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <header class="header-corpo">
+      <div class="header-conteudo">
+        <a href="../home.html">Home</a>
+        <a href="./login.html">Login</a>
+        <a href="#">Registro</a>
+      </div>
+    </header>
+    <div class="corpo-principal">
+      <div class="conteudo-principal">
+        <div class="login-corpo">
+          <h1 class="login-title">Login</h1>
+          <div class="login-inputs">
+            <div class="login-entries" name="loginEntries">
+              <label>Usuario</label>
+              <input type="text" id="usuario" name="usuario" />
+            </div>
+            <div class="login-entries">
+              <label>Senha</label>
+              <input type="password" id="senha" name="senha" />
+            </div>
+          </div>
+          <div class="login-btn">
+            <button
+              type="submit"
+              onclick="FuncaoJS(usuario.value, senha.value)"
+            >
+              Entrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-corpo"> <!-- RODAPÉ DA PAGINA, CONTEUDO QUE FICA NO FINAL DE TUDO -->
+        <div class="footer-conteudo">
+            <div class="logos">
+                <img src="../assets/facebook.png" class="logo"> <!-- TAG DE IMAGEM -->
+                <img src="../assets/instagram.png" class="logo">
+                <img src="../assets/twitter.png" class="logo">
+            </div>
+            <p>Todos os direitos reservados por DUDU.</p> <!-- TEXTO NO RODAPÉ -->
+        </div>
+    </footer>
+  </body>
+</html>

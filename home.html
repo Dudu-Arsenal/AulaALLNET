@@ -4,51 +4,35 @@
     <link rel="stylesheet" href="home.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="home.js"></script>
-    <title>Login</title> <!-- TITULO DA PAGINA NO NAVEGADOR -->
+    <title>HOME</title> <!-- TITULO DA PAGINA NO NAVEGADOR -->
 </head>
 <body>
     <header class="header-corpo"> <!-- CABEÇALHO DA PAGINA, CONTEUDO QUE FICA NO TOPO -->
         <div class="header-conteudo"> 
-            <a href="#">Home</a> <!-- TAG QUE FAZ UM LINK PARA UM SITE/PAGINA EXTERNO -->
-            <a href="#">Aviso</a>
-            <a href="#">Contato</a>
+            <a href="home.html">Home</a> <!-- TAG QUE FAZ UM LINK PARA UM SITE/PAGINA EXTERNO -->
+            <a href="/login/login.html">Login</a>
+            <a href="#">Registro</a>
         </div>
     </header>
     <div class="corpo-principal"> <!-- CORPO PRINCIPAL DA PAGINA, TODO CONTEUDO DA PAGINA ESTA AQUI, EXCETO HEADER E FOOTER -->
         <div class="conteudo-principal"> <!-- CONTEUDO PRINCIPAL DA PAGINA, A PRIMEIRA TELA QUE CARREGA QUANDO ENTRA NO SITE -->
             <div class="texto-corpo">  <!-- CONTEUDO DA ESQUERDA, COM TITULO E TEXTO -->
                 <div class="texto-conteudo">
-                    <h1>Titulo do Texto</h1>
+                    <h1>DEVILMAN CRYBABY</h1>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis expedita nihil inventore vitae at nostrum omnis deleniti est aperiam sed, assumenda aliquam mollitia vel qui dicta ea, quam odit quidem?
+                        Trata-se de uma história onde um jovem introvertido, Akira Fudo, torna-se hospedeiro de um demônio lendário e tem a missão de combater a invasão de criaturas infernais na Terra. Mas nem tudo sai como planejado.
                     </p>
-                </div>
-            </div>
-            <div class="login-corpo"> <!-- CONTEUDO DA DIREITA, COM UMA AREA PARA LOGIN -->
-                <h1 class="login-title">Login</h1>
-                <div class="login-inputs">
-                    <div class="login-entries" name="loginEntries"> <!-- TAG PARA CENTRALIZAR O LABEL(NOME) E O INPUT(ENTRADA) -->
-                        <label>Usuario</label> <!-- TAG PARA NOMEAR O INPUT -->
-                        <input type="Text" id="usuario"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
-                    </div>
-                    <div class="login-entries">
-                        <label>Senha</label>
-                        <input type="password" id="senha">
-                    </div>
-                </div>
-                <div class="login-btn"> <!-- TAG PARA GUARDAR O BOTÃO -->
-                    <button type="submit" onclick="FuncaoJS()">Entrar</button>
                 </div>
             </div>
         </div>
         <div class="conteudo-secundario"> <!-- CONTEUDO SECUNDARIO DA PAGINA, QUE FICA ABAIXO DO CONTEUDO PRINCIPAL -->
             <div class="imagem"> <!-- TAG PARA GUARDAR A IMAGEM DO CAFÉ -->
-                <img src="./assets/coffee-purple-jeremy-moore.jpg" alt="Foto Exemplo"> <!-- TAG PARA INSERIR A IMAGEM -->
+                <img src="./assets/devilman.jpg" alt="Foto Exemplo"> <!-- TAG PARA INSERIR A IMAGEM -->
             </div>
             <div class="texto"> <!-- TEXTO E BOTÃO NA DIREITA DO CAFÉ -->
                 <div>
-                    <p>Saiba como fazer seu café<br> do melhor jeito possivel.</p> <!-- TEXTO -->
-                    <button type="submit">Saiba Mais</button> <!-- BOTÃO SAIBA MAIS -->
+                    <p>E se eu te dissesse,<br> que existem demonios que <br>a carne humana vestem.</p> <!-- TEXTO -->
+                    <a href="https://www.legiaodosherois.com.br/lista/10-motivos-para-assistir-devilman-crybaby-novo-anime-da-netflix.html#list-item-1" target="_blank"><button type="button">Saiba Mais</button></a> <!-- BOTÃO SAIBA MAIS -->
                 </div>
             </div>
         </div>

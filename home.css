@@ -5,19 +5,24 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    --main-dark: rgb(197, 51, 51);
+    --main-light: rgb(255, 142, 142);
+    --hover-dark: rgb(161, 32, 32);
+    --hover-light: rgb(226, 96, 96);
+    --text-color: rgb(43, 10, 10);
 }
 
 /* COR DO FUNDO */
 body{
-    background-color: rgb(183, 143, 203);
+    background-color: var(--main-light);
 }
 
 /* HEADER (CABEÇALHO) INICIO */
 
 .header-corpo{
-    min-height: 8vh;
-    height: 8vh;
-    background-color: rgb(169, 93, 207);
+    min-height: 10vh;
+    height: 10vh;
+    background-color: var(--main-dark);
     box-shadow: 1px 1px 3px #1f1f1f;
 }
 
@@ -47,7 +52,7 @@ body{
 }
 
 .header-conteudo a:hover{
-    background-color: rgb(216, 130, 238);
+    background-color: var(--hover-light);
     transition: all .3s ease-in-out;
 }
 
@@ -59,13 +64,13 @@ body{
 .corpo-principal {
     max-width: 1024px;
     width: 100%;
-    min-height: 70vh;
+    min-height: 80vh;
     margin: auto;
     padding-bottom: 20px;
 }
 
 .conteudo-principal {
-    min-height: 70vh;
+    min-height: 50vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -76,8 +81,8 @@ body{
 /* TITULO E TEXTO NA ESQUERDA */
 .texto-corpo{
     /* TAMANHO DA TAG QUE GUARDA O TITULO E O TEXTO */
-    width: 450px;
-    height: 250px;
+    width: 80vw;
+    height: max-content;
 }
 
 .texto-conteudo{
@@ -98,7 +103,7 @@ body{
     text-align: left;
     font-weight: bolder;
     text-transform: uppercase;
-    color:rgb(41, 5, 75);
+    color: var(--text-color);
 }
 
 /* EFEITO NA BORDA DO TITULO H1 */
@@ -109,102 +114,16 @@ body{
 
 /* ESTILO DO TEXTO */
 .texto-conteudo p{
-    color:rgb(41, 5, 75);
+    color: var(--text-color);
     text-align: left;
     font-size: 120%;
 }
 
 /* EFEITO DE SUBIR O TEXTO */
 .texto-conteudo p:hover{
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     color: #1f1f1f;
     transition: all 1s ease-in-out;
-}
-/* ----------------------------------------------------------------------------------------------------- */
-
-/* QUADRADO DO LOGIN */
-.login-corpo {
-    /* TAMANHO DA TAG */
-    width: 300px;
-    height: 300px;
-    /* POSICIONAMENTO */
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    /* BORDA */
-    border-radius: 10px;
-    border: 2px solid black;
-    background-color: whitesmoke;
-}
-
-/* TITULO DO LOGIN */
-.login-title{
-    width: 100%;
-    font-weight: bolder;
-    font-size: 150%;
-    text-align: center;
-    text-transform: uppercase; /* FONTE EM LETRA MAIUSCULA */
-}
-
-/* TAGS QUE GUARDAM OS LABELS E INPUTS */
-.login-entries{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-/* LABEL (NOMES) */
-.login-entries label{
-    /* TAMANHO DA TAG E DA FONTE DOS LABELS */
-    width: 220px; 
-    margin: auto;
-    font-size: 120%;
-}
-
-/* INPUT (ENTRADA) */
-.login-entries input{
-    /* TAMANHO DO INPUT */
-    min-width: 150px;
-    margin: auto;
-    /* BORDA */
-    border: 1.5px solid #1f1f1f;
-    border-radius: 5px;
-    /* TAMANHO DA FONTE DO TEXTO DIGITADO */
-    font-size: 110%;
-}
-
-.login-entries input:focus{
-    /* BORDA MUDA DE COR QUANDO CLICA 'FOCUS = FOCO' */
-    outline: none;
-    border-width: 2px;
-    border-color: rgb(213, 130, 238);
-}
-
-/* BOTÃO DO LOGIN */
-.login-btn{
-    /* CENTRALIZAR A TAG QUE GUARDA O BOTÃO */
-    margin: 10px auto 10px auto;
-}
-
-.login-btn button{
-    /* TAMANHO E COR */
-    width: 140px;
-    height: 34px;
-    background-color: rgb(169, 120, 215);
-    /* ESTILO DA FONTE */
-    font-weight: bolder;
-    font-size: 110%;
-    text-transform: uppercase;
-    /* BORDA E CURSOS */
-    border-radius: 3px;
-    border: 2px solid #1f1f1f;
-    cursor: pointer;
-}
-
-/* EFEITO DE COR DO BOTÃO */
-.login-btn button:hover{
-    background-color: violet;
-    transition: all .3s ease-in;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
@@ -218,7 +137,7 @@ body{
     align-items: center;
     justify-content: space-around;
     /* COR DO FUNDO E BORDA */
-    background-color: rgba(169, 93, 207, 0.575);
+    background-color: var(--main-dark);
     box-shadow: 1px 1px 5px #1f1f1f;
     border-radius: 10px;
     /* EFEITO */
@@ -236,8 +155,8 @@ body{
 /* TEXTO DENTRO DO CONTEUDO SECUNDARIO*/
 .texto{
     /* CORAÇÃO */
-    background-image: url(./assets/purple-heart-emoji-mean-1.png);
-    background-size: 180%;
+    background-image: url(./assets/fire-png.webp);
+    background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
     /* CORAÇÃO */
@@ -251,14 +170,8 @@ body{
     text-align: center;
     font-size: 170%;
     font-weight: bolder;
-    color:rgb(28, 2, 53);
+    color: var(--text-color);
     /* TEXTO */
-}
-
-/* EFEITO DO TEXTO */
-.texto p:hover{
-    color: whitesmoke;
-    transition: all .3s ease-in;
 }
 
 /* BOTÃO 'SAIBA MAIS' */
@@ -270,7 +183,7 @@ body{
     /* BORDA E COR DO BOTÃO */
     border-radius: 5px;
     border: 2px solid #1f1f1f;
-    background-color: rgb(167, 89, 240);
+    background-color: var(--main-dark);
     /* ESTILO DA FONTE DO BOTÃO */
     font-size: 100%;
     font-weight: bolder;
@@ -280,7 +193,7 @@ body{
 
 /* EFEITO MUDA DE COR O BOTÃO */
 .texto button:hover{
-    background-color: violet;
+    background-color: var(--hover-light);
     transition: all .3s ease-in;
 }
 
@@ -297,9 +210,9 @@ body{
 
 /* FUNDO DO RODAPÉ */
 .footer-corpo{
-    min-height: 8vh;
-    height: 8vh;
-    background-color: rgb(28, 2, 53);
+    min-height: 10vh;
+    height: 10vh;
+    background-color: var(--hover-dark);
 }
 
 /* CENTRALIZANDO CONTEUDO DO RODAPÉ */
@@ -336,8 +249,8 @@ body{
 
 .logos img:hover{
     /* EFEITO DE PREENCHER COR COM MOUSE EM CIMA */
-    background-color: violet;
-    border-radius: 5px;
+    background-color: var(--hover-light);
+    border-radius: 7px;
 }
 
 /* TEXTO DO RODAPÉ */
