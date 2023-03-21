@@ -31,3 +31,16 @@ function setCor(){
 let mudaCor = document.querySelector('.nomeClasse');
 mudaCor.setAttribute('style', 'background-color: greenyellow;')
 } 
+
+let count = 1;
+setInterval( function(){
+    nextImage();
+    console.log("A")
+}, 5000)
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count).checked = true;
+}

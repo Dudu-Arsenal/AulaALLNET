@@ -14,7 +14,19 @@
 
 /* COR DO FUNDO */
 body{
-    background-color: var(--main-light);
+    background-color: #ffe8e8;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 /* HEADER (CABEÇALHO) INICIO */
@@ -69,10 +81,113 @@ body{
     padding-bottom: 20px;
 }
 
+.slider{
+    margin: 20px auto;
+    width: 1024px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  1px 1px 10px #1f1f1f;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s ease;
+}
+
+.slide img{
+    width: 1024px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1024px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid whitesmoke;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: whitesmoke;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 1024px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: whitesmoke;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: whitesmoke;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: whitesmoke;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4   {
+    background-color: whitesmoke;
+}
+
 .conteudo-principal {
     min-height: 50vh;
     margin: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -83,6 +198,7 @@ body{
     /* TAMANHO DA TAG QUE GUARDA O TITULO E O TEXTO */
     width: 80vw;
     height: max-content;
+    margin: 10px auto 40px auto;
 }
 
 .texto-conteudo{
@@ -97,7 +213,7 @@ body{
 .texto-conteudo h1{
     /* TAMANHO E BORDA DO H1 */
     width: max-content;
-    margin: 20px 0px;
+    margin: 10px 0px;
     border-bottom: 3px solid whitesmoke;
     /* ESTILO DO TEXTO DO H1 */
     text-align: left;
@@ -117,13 +233,7 @@ body{
     color: var(--text-color);
     text-align: left;
     font-size: 120%;
-}
-
-/* EFEITO DE SUBIR O TEXTO */
-.texto-conteudo p:hover{
-    margin-bottom: 40px;
-    color: #1f1f1f;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
