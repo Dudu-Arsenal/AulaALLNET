@@ -29,7 +29,7 @@
                 <div class="login-inputs">
                     <div class="login-entries" name="loginEntries"> <!-- TAG PARA CENTRALIZAR O LABEL(NOME) E O INPUT(ENTRADA) -->
                         <label>Usuario</label> <!-- TAG PARA NOMEAR O INPUT -->
-                        <input type="text" id="usuario" name="usuario"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
+                        <input type="text" id="nome" name="usuario"> <!-- TAG PARA ENTRADA DE DADOS DO USUARIO -->
                     </div>
                     <div class="login-entries">
                         <label>Senha</label>
@@ -37,8 +37,9 @@
                     </div>
                 </div>
                 <div class="login-btn"> <!-- TAG PARA GUARDAR O BOTÃO -->
-                    <button type="submit" onclick="FuncaoJS(usuario.value, senha.value)">Entrar</button>
+                    <button type="submit" onclick="verificaUser()">Entrar</button>
                 </div>
+                <p style="color: red; display: none;" id="incorreto">Usuario ou Senha incorretos!</p>
             </div>
         </div>
         <div class="conteudo-secundario"> <!-- CONTEUDO SECUNDARIO DA PAGINA, QUE FICA ABAIXO DO CONTEUDO PRINCIPAL -->
